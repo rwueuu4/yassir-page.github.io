@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Rakkas&display=swap');
+body{
+	font-family: 'Rakkas', cursive;
+	margin: 0;
+	background: #eee;
+	height: auto
+}
+h1{
+	font-size: 2.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0;
+}
+h2{
+	font-weight: 400;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	margin: 0;
+}
+img{
+	width: 100%;
+}
+main{
+	max-width: 900px;
+	margin: auto;
+	box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.12), -10px 0px 40px rgba(0, 0, 0, 0.24)  ;
+}
+#landing{
+	background: #fff;
+}
+#landing-text{
+	display: flex;
+	flex: 0 1 40vw;
+	height: 40vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-right: 1rem;
+	padding-left: 1rem;
+
+}
+#landing-text h2{
+	color: rgba(0, 0, 0, 0.33)
+}
+#lading-imge{
+	background: url(https://source.unsplash.com/5ptuS06CAJk);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+	flex: 0 1 60vw;
+	margin: 0;
+}
+.botton{
+	padding: 0.2rem 1rem;
+	border: 1px rgb(204, 204, 204) solid;
+	display: inline-block;
+	margin: 2rem 0 0;
+	border-radius: 40px;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.84);
+	transition: background 500ms ease;
+}
+.botton:hover{
+	background-color: rgba(204, 204, 204, 0.65);
+}
+
+#header{
+	padding: 1.5rem;
+	text-align: center;
+	background: rgba(51, 51, 51, 0.93);
+	color: #fff;
+}
+#header h2 {
+	border-left:  dotted 1px #fff;
+	border-right: dotted 1px #fff;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.caption{
+	padding: 16px;
+	text-align: center;
+	
+}
+footer{
+	text-align: center;
+	padding: 2rem 1rem;
+	margin: auto;
+	color: rgba(51, 51, 51, 0.9);
+}
+footer h3{
+	font-size: 35px;
+	margin-bottom: 0;
+}
+
+/*Screen size 500px and Up*/
+
+@media(min-width: 500px) {
+	#landing {
+		display: flex;	
+		height: 100%;
+	}
+	#landing-text{
+		height: 90vh;
+	}
+	#lading-imge{
+		height: 90vh;
+	}
+}
+
+/*Screen size 700px and Up*/
+@media(min-width : 700px) {
+	.botton {
+		padding: 1rem 3rem;
+	}
+	
+}
